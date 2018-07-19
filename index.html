@@ -29,7 +29,6 @@
           }
         }, 100);
 
-        // Start here
         cryptoZombies.events.Transfer({ filter: { _to: userAccount } })
         .on("data", function(event) {
           let data = event.returnValues;
